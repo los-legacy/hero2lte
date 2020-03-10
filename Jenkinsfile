@@ -13,7 +13,7 @@ node('chris') {
          sh """#!/bin/bash
             set +e
             rm -rf $env.SYSTEM_PATH/$env.LOCAL_MANIFESTS_PATH/*
-            wget $env.LOCAL_MANIFESTS_URL -O $env.SYSTEM_PATH/$env.LOCAL_MANIFESTS_PATH/zero.xml
+            wget $env.LOCAL_MANIFESTS_URL -O $env.SYSTEM_PATH/$env.LOCAL_MANIFESTS_PATH/hero.xml
             ls -lah $env.SYSTEM_PATH/$env.LOCAL_MANIFESTS_PATH/
          """
       }
